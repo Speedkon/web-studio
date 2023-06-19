@@ -1,0 +1,274 @@
+@media screen and (min-width: 428px) {
+    .container {
+        max-width: 428px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .footer>.container,
+    .team>.container,
+    .customers>.container {
+        max-width: 584px;
+    }
+    .header-logo {
+        margin-right: 120px ;
+    }
+    .header-list {
+        display: flex;
+        gap: 40px;
+    }
+    .header-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--navy-blue-color);
+        padding: 24px 0;
+        display: block;
+    }
+    .header-link:hover,
+    .header-link:focus {
+        color: var(--ocean-color);
+    }
+    .link-after {
+        color: var(--ocean-color);
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .link-after::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        width: 100%;
+        background-color: var(--ocean-color);
+        border-radius: 2px;
+    }
+    .header-address {
+        font-style: normal;
+        margin-left: auto;
+    }
+    .address-list {
+        display: block;
+    }
+    .address-link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: var(--text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .address-item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    .address-link:hover,
+    .address-link:focus {
+        color: var(--ocean-color)
+    }
+    .menu-open-btn {
+        display: none;
+    }
+    .mob-menu {
+        display: none;
+    }
+    /* ----------------------- MAIN --------------------- */
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab-2x.jpg);
+    }
+    }
+    .hero-title {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+        text-transform: none;
+    }
+    .hang-list {
+        gap: 72px 24px;
+    }
+    .hang-list-item {
+        width: 356px;
+    }
+    .hang-title-item {
+        text-align: left;
+    }
+    .team-list {
+        gap: 64px 24px;
+    }
+    .customers-list {
+        gap: 72px 24px;
+    }
+    .customers-list-item {
+        width: calc((100% - 48px) / 3);
+    }
+    .modal {
+        width: 408px;
+        padding: 72px 24px 24px;
+    }
+    /* ----------------------- FOOTER --------------------- */
+    .footer-container {
+        justify-content: start;
+        gap: 0;
+    }
+    .footer-container-1 {
+        display: flex;
+        margin-bottom: 72px;
+    }
+    .footer-text {
+        align-items: start;
+        margin-bottom: 0;
+        margin-right: 24px;
+    }
+    .footer-title {
+        justify-content: start;
+    }
+    .subscribe-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+    .subscribe-input {
+        width: 264px;
+        margin-bottom: 0;
+    }
+    .subscribe-btn {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .team>.container,
+    .customers>.container,
+    .footer>.container {
+        max-width: 1158px;
+    }
+    .header-logo {
+        margin-right: 76px ;
+    }
+    .address-list {
+        display: flex;
+        gap: 40px;
+    }
+    .address-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+    .address-item:not(:last-child) {
+        margin-bottom: 0;
+    }
+    /* ----------------------- MAIN --------------------- */
+    .hero {
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-2x.jpg);
+        }
+    }
+    .hero-title {
+        margin-bottom: 36px;
+        text-transform: none;
+        margin-bottom: 48px;
+    }
+    .hang {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .hang-list {
+        gap: 24px;
+    }
+    .hang-list-item {
+        width: 264px;
+    }
+    .hang-title-item {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .hang-text {
+        font-weight: 400;
+    }
+    .hang-icon-container {
+        background: var(--cloud-color);
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px; 
+    }
+    .works {
+        display: block;
+        padding-bottom: 120px;
+    }
+    .works-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--navy-blue-color);
+        margin-bottom: 72px;
+    }
+    .works-list {
+        display: flex;
+        gap: 24px;
+        margin-top: auto;
+    }
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .team-list {
+        gap: 24px;
+    }
+    .customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .customers-list-item {
+        width: calc((100% - 120px) / 6);
+    }
+    /* ----------------------- FOOTER --------------------- */
+    .footer-container {
+        flex-direction: row;
+    }
+    .footer-container-1 {
+        margin-bottom: 0;
+    }
+    .footer-text {
+        margin-right: 120px;
+    }
+    .footer-soc {
+        margin-right: 80px;
+    }
+    .subscribe-input {
+        border: 1px solid var(--white-color);
+    }
+    .subscribe-input::placeholder {
+    color: var(--white-color);
+}
+}
